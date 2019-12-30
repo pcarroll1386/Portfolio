@@ -35,11 +35,39 @@
 			</label><br />
 			<input type="text" id="phone" name="phone"><br />
 			
+			<label for="contact">Best time to call:</label><br />
 			
+			<select id="contact: name="contact">
+				option valu="default" selected>--Select One--</option>
+				<option value="morning">Morning (8AM to 12PM Eastern)</option>
+				<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+				<option value="evening"> Evening (5PM to 8PM Eastern)</option>
+			</select>
 			
+			<fieldset>
+				<legend>I am interested in (check all that apply)</legend><br />
+				<input type="checkbox" id="frontEnd" name"interest" value="frontEnd">
+				<label for="frontEnd">Front End Web Development<label><br />
+				<input type="checkbox" id="backend" name="backEnd" name="interest" value+"backEnd">
+				<label for+"backEnd">Back End Web Development</label><br />
+				<input type="checkbox" id="database" name="intrest" value="database">
+				<label for="database">Database Design</label><br />
+			</fieldset>
 			
-		<p> <strong>Email:</strong> pfcarroll13@gmail.com</p>
-		<p> <strong>Phone:</strong> 651-202-7824</p>
+			<fieldset>
+				<legend>I have filled in the client questionnaire form:</legend><br />
+				<input type="radio" id="choice1" name="questionnaire" value="yes">
+				<label for="choice1">Yes</label><br />
+				<input type="radio" id="choice2" name="questionnaire" value="no">
+				<label for="choice2">No</label><br />
+			</fieldset>
+				
+			<label for="info">Additional Information</label><br />
+			<textarea id="info" name="info">
+			</textarea>
+			
+			<input type="submit" name="submit" value="Submit">
+					
 		</section>
 		
 	<hr />
