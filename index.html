@@ -1,82 +1,124 @@
 <!DOCTYPE html>
 	<!-- Name: Paul F. Carroll
 	Date Created: 12/26/19
-	Most Recent revision: 12/27/19
+	Most Recent revision: 1/6/2020
 	-->
 <html lang="en">
 
 	<head>
 		<title>Paul's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td {
+				border: 1px solid #222;
+				border-collapse: collapse;
+				padding:5px 10ps;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height:30px;
+			}
+			th {
+				background-color: #c84630;
+			}
+			tr:nth-child(odd) {
+				background-color: #afaab9;
+			}
+			article img {
+				float:left;
+			}
+			.right-content {
+				float:left;
+			}
+			article {
+				margin-bottom: 16px;
+			}
+				
+		</style>
 	</head>
 	<body>
 		<header>
 		<h1>Portfolio for Paul F. Carroll</h1>
 		</header>
-		<hr />
-		<nav>
-		<p><a href="projects.html">Projects</a></p>
-		<p><a href="contact.html">Contact</a></p>
-		<p><a href="testimonials.html">Testimonials</a></p>
-		<p><a href="https://www.google.com" target="_blank">Google</a></p>
-		<p><a href="#target">Jump down.</a>
+		
+		<nav class="border"> 
+		<!-- The nav element will include navigation buttons or links -->
+			<p><a href="projects.html">Projects</a></p>
+			<p><a href="contact.html">Contact</a></p>
+			<p><a href="testimonials.html">Testimonials</a></p>
+			<div class="clear-float"></div>
 		</nav>
-		<hr />
+		
 		<section>
 		<article id="about-me">
-		<img src="images/portrait1.jpg" alt="Portrait of Paul F. Carroll" />
 		<h2><em>About Me</em></h2>
+		<img src="images/portrait1.jpg" alt="Portrait of Paul F. Carroll" width="250" />
 			<p>I am a <strong>hard worker</strong></p>
 			<p>I learn <strong>quickly</strong></p>
+		<div class="clear-float"></div>
 		</article>
 		
-		<article id="past-experiences">		
-		
+		<article id="past-experiences">			
 		<h2><em>Past Experiences</em></h2>
-		<img src="images/fibersplice1.jpg" alt="Fiber splice for bussiness connect" />
+		<img src="images/fibersplice1.jpg" alt="Fiber splice for bussiness connect" width="250" />
+			<div class="right-content">
 			<table>
 				<caption>Employment History</caption>
-				<tr>
-				<th>Years of Employment</th>
-				<th>Title</th>
-				<th>Company</th>
-				</tr>
+				<thead>
+					<tr>
+						<th>Years of Employment</th>
+						<th>Title</th>
+						<th>Company</th>
+					</tr>
+				</thead>
+				<tbody>				
+					<tr>
+						<td>2017-2020</td>
+						<td>Install and Repair Technition</td>
+						<td>Strata Networks</td>
+					</tr>
 				
-				<tr>
-				<td>2017-2020</td>
-				<td>Install and Repair Technition</td>
-				<td>Strata Networks</td>
-				</tr>
+					<tr>
+						<td>2013-2017</td>
+						<td>Level 2 Wireless Support</td>
+						<td>Strata Networks</td>
+					</tr>
 				
-				<tr>
-				<td>2013-2017</td>
-				<td>Level 2 Wireless Support</td>
-				<td>Strata Networks</td>
-				</tr>
+					<tr>
+						<td>2011-2013</td>
+						<td>Customer Service Representative</td>
+						<td>Strata Networks</td>
+					</tr>
 				
-				<tr>
-				<td>2011-2013</td>
-				<td>Customer Service Representative</td>
-				<td>Strata Networks</td>
-				</tr>
+					<tr>
+						<td>2009-2011</td>
+						<td>Care Giver</td>
+						<td>Bridges Habilitation Services</td>
+					</tr>
 				
-				<tr>
-				<td>2009-2011</td>
-				<td>Care Giver</td>
-				<td>Bridges Habilitation Services</td>
-				</tr>
-				
-				<tr>
-				<td>2007-2009</td>
-				<td>Student</td>
-				<td>Eagle Gate College</td>
-				</tr>
+					<tr>
+						<td>2007-2009</td>
+						<td>Student</td>
+						<td>Eagle Gate College</td>
+					</tr>
+				</tbody>
 			</table>
-			
+			</div>
+		<div class="clear-float"></div>
 		</article>
 		
 		<article id="hobbies">
 		<h2><em>Hobbies</em></h2>
-		<img src="images/decorativepillow(1).jpg" alt="Handsewn Pillow" />
+		<img src="images/decorativepillow(1).jpg" alt="Handsewn Pillow" width="250" />
+			<div class="right-content">
 			<ul>
 				<li>Authors</li>
 				<ol>
@@ -110,12 +152,20 @@
 					<li>boating</li>
 					</ul>
 			</ul>
-				
+			
+			<ul>
+				<li>Creative Activities</li>
+					<ul>
+					<li>Sewing</li>
+					<li>Writing</li>
+					<li>coding</li>
+					</ul>
+			</ul>
+			</div>
+		<div class="clear-float"></div>
 		</article>
 		</section>
 		<footer>
-		<hr />
-		<p id="target"></p>
 		<p>&copy; 2019 Paul F. Carroll. All rights reserved. </p>
 		</footer>
 			
